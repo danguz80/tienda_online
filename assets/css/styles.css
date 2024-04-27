@@ -41,6 +41,7 @@
 ul li{
     margin-top: 1rem;
     list-style: none;
+    cursor: pointer;
 }
 
 li:hover{
