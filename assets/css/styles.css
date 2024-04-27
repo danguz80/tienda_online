@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: auto 100% auto;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer"   
+}
+
+.header{
+    grid-area: header;
+    background-color: #faf6d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: #c7d8ab;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.categorias{
+    padding-left: 1vw;
+    flex-direction: column;
+    padding-left: 2vw;
+    position: fixed;
+}
+
+ul li{
+    margin-top: 1rem;
+    list-style: none;
+}
+
+li:hover{
+    background-color: #c3d2ab;
+    color: #40a855;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-area: main;
+    background-color: #909a92;
+    height: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card img{
+    height: 25rem;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #faf6d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.btn-success{
+    background-color: #338143;
+}
+
+/* Esta es del sidebar */
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #338143;
+  }
+  
+  /* Esta es del footer */
+  .titillium-web-light-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #c0740b;
+  }
+  
+  /* Esta es del card text */
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #338143;
+  }
+
+  /* Esta es la del Card Title */
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #c0740b;
+  }
+  
+  /* Esta es la del Subtitulo */ 
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #292928;
+  }
+
+  /* Esta es la del button */
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* Esta es del logo */
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 4rem;
+    color: #c0740b;   
+  }
