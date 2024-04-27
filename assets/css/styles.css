@@ -5,7 +5,7 @@
 
 .grid-container{
     display: grid;
-    grid-template-columns: 10% auto;
+    grid-template-columns: 10vw auto;
     grid-template-rows: auto 100% auto;
     grid-template-areas:
         "header header"
@@ -55,12 +55,29 @@ li:hover{
     grid-area: main;
     background-color: #909a92;
     height: 100%;
-    gap: 10px;
-    padding: 10px;
+    gap: 0.5vw;
+    padding: 0.5vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.card-body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21.5vw;
 }
 
 .card img{
     height: 25rem;
+    width: 21.5vw;
 }
 
 .footer{
@@ -79,6 +96,21 @@ li:hover{
 
 .btn-success{
     background-color: #338143;
+    border: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 8%;
+}
+
+.btn-success:hover{
+    background-color: #286935;
+}
+
+.btn-success a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
 /* Esta es del sidebar */
@@ -103,6 +135,7 @@ li:hover{
     font-weight: 200;
     font-style: normal;
     color: #338143;
+    font-size: 1.1rem;
   }
 
   /* Esta es la del Card Title */
@@ -111,6 +144,7 @@ li:hover{
     font-weight: 400;
     font-style: normal;
     color: #c0740b;
+    font-size: 1.2rem;
   }
   
   /* Esta es la del Subtitulo */ 
