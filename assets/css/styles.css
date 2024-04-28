@@ -44,6 +44,10 @@ ul li{
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 li:hover{
     background-color: #c3d2ab;
     color: #40a855;
